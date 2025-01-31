@@ -1,6 +1,6 @@
 # vue-pratice-board
 
-This project is for pratice Vue
+This project is for pratice Vue.
 
 This template should help get you started developing with Vue 3 in Vite.
 
