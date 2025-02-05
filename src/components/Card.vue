@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from 'vue-router';
 import { defineProps } from 'vue';
 
 defineProps({
@@ -21,6 +22,10 @@ defineProps({
     buttonText: {
         type: String,
         default: 'button text'
+    },
+    href: {
+        type: String,
+        default: '/jobs'
     }
 })
 </script>
@@ -31,8 +36,8 @@ defineProps({
         <p class="mt-2 mb-4">
             {{ description }}
         </p>
-        <a href="jobs.html" :class="`inline-block ${buttonBg} text-white rounded-lg px-4 py-2 hover:bg-gray-700`">
+        <RouterLink :to="href" :class="`inline-block ${buttonBg} text-white rounded-lg px-4 py-2 hover:bg-gray-700`">
             {{ buttonText }}
-        </a>
+        </RouterLink>
     </div>
 </template>

@@ -8,7 +8,8 @@ const cardsData = [
         title: "For Developers",
         description: "Browse our Vue jobs and start your career today", 
         buttonBg: "bg-black",
-        buttonText:"Browse Jobs" 
+        buttonText:"Browse Jobs",
+        href: "/jobs"
     },
     {
         id: 2,
@@ -17,6 +18,7 @@ const cardsData = [
         description: "List your job to find the perfect developer for the role", 
         buttonBg: "bg-green-500",
         buttonText: "Add Job",
+        href: "/jobs/add"
     }
 ]
 
@@ -34,6 +36,7 @@ const cardsData = [
                     :description="data.description"
                     :buttonBg="data.buttonBg"
                     :buttonText="data.buttonText"
+                    :href="data.href"
                 />
             </div>
         </div>
