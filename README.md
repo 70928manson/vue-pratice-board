@@ -1,6 +1,6 @@
 # vue-practice-board
 
-This project is for practice Vue.
+This searching-board project is for practice Vue.
 
 This template should help get you started developing with Vue 3 in Vite.
 
